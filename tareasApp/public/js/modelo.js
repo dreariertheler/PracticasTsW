@@ -1,6 +1,6 @@
 class TareasApp {
     tareas = [];
-    //MarioComePollas
+    //EnriqueComeculosPeludos
     agregarTarea(titulo, descripcion){
 
         if(titulo == null){
