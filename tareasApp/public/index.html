@@ -1,13 +1,50 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <title>Web de Tarea</title>
+        <link rel="stylesheet" href="./style/style.css" type="text/css">
+        <meta charset="UTF-8">
+    </head>
 
-<head>
-  <title>Express</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
+    <body>
+        <header>
+            <hr class="estilo2">
 
-<body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
-</body>
+            <a href="https://www.uclm.es/"> <img class="foto_uclm" src="./images/logo.png"> </a>
+            <h1 class="titulo">Tecnologias y sistemas Web</h1>
+            <a href="https://www.uclm.es/"> <img class="foto_uclm"src="./images/logo.png"> </a>
 
+            <hr class="estilo2">
+            <h1>Sitio Web de Tareas</h1>
+        </header>
+
+        <main>            
+            <h2>Listado de tareas</h2>
+            <table>
+                <thead>
+                    <tr>
+                    <th>Tareas</th>
+                    </tr>
+                    <tr></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p>Listado Tarea 1</p></td><td><a href="ver-tarea.html"><img src="./images/descarga.png"></a></td><td><a href="borrar-tarea.html"><img src="./images/x.png"></a></td>
+                    </tr>
+                    <tr>
+                        <td><p>Listado Tarea 2</p></td><td><a href="ver-tarea.html"><img src="./images/descarga.png"></a></td><td><a href="borrar-tarea.html"><img src="./images/x.png"></a></td>
+                    </tr>
+                    <tr>
+                        <td><p>Listado Tarea 3</p><td><a href="ver-tarea.html"><img src="./images/descarga.png"></a></td></td><td><a href="borrar-tarea.html"><img  src="./images/x.png"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <form action="agregar-tarea.html"><button type="submit">Agregar</button></form>
+        </main>
+
+        <footer>
+            <p>Tareas WebApp - Ismael, Mario y Enrique</p>
+        </footer>    
+    </body>
 </html>
