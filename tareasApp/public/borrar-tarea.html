@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Borrar Tarea</title>
+    <link rel="stylesheet" href="./style/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <script src="./commons/model.js"></script>
+        <script src="borrar-tarea-presenter.js"></script>
+        <script>
+            let presenter;
+            function inicio(){
+                presenter = new TareasAppPresenter(new TareasApp(), document);
+                presenter.borrar();
+            }
+        </script>
+</head>
+
+<body onload="inicio()">
+    <header>
+        <hr class="estilo2">
+
+        <a href="https://www.uclm.es/"> <img class="foto_uclm" src="./images/logo.png"> </a>
+        <h1 class="titulo">Tecnologias y sistemas Web</h1>
+        <a href="https://www.uclm.es/"> <img class="foto_uclm"src="./images/logo.png"> </a>
+
+        <hr class="estilo2">
+        <h1>Sitio Web de Tareas</h1>
+    </header>
+
+    <main>
+    <a href="index.html">Listado</a>
+    
+    <h2 id="titulo"></h2>
+
+    <p id="contenido"></p>
+    
+        
+    <footer>
+        <p>Tareas WebApp - Ismael, Mario y Enrique</p>
+    </footer>
+</body>
+
+</html>

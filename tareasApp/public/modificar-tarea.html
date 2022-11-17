@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Modificar Tarea</title>
+    <link rel="stylesheet" href="./style/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <script src="./commons/model.js"></script>
+    <script src="modificar-tarea-presenter.js"></script>
+    <script>
+        let presenter;
+        function inicio(){
+            presenter = new modificarTareaPresenter(new TareasApp(), document);
+            presenter.verModificar();
+        }
+    </script>
+</head>
+
+<body onload="inicio()">
+    <header>
+        <hr class="estilo2">
+
+        <a href="https://www.uclm.es/"> <img class="foto_uclm" src="./images/logo.png"> </a>
+        <h1 class="titulo">Tecnologias y sistemas Web</h1>
+        <a href="https://www.uclm.es/"> <img class="foto_uclm"src="./images/logo.png"> </a>
+
+        <hr class="estilo2">
+        <h1>Sitio Web de Tareas</h1>
+    </header>
+
+    <main>
+        <h2>Modificar Tarea N</h2>
+        <br>
+        <a href="index.html">Listado</a>
+        <form action="ver-tarea.html">
+            <label for="titulo">Titulo</label><br>
+            <input id="name" name="title" type="text"
+            size="30" value="Tarea N" N><br>
+            <label for="username">Descripci&oacute;n</label><br>
+            <textarea id="descripcion" name="Descripcion" rows="15" cols="50">Descripci&oacute;n</textarea><br>
+            <input type="submit" onclick="presenter.guardarModificar(event)" value="Guardar">
+            <input type="reset" value="Limpiar">
+        </form>
+    </main>
+    
+        <footer>
+            <p>Tareas WebApp - Ismael, Mario y Enrique</p>
+        </footer>
+</body>
+</html>

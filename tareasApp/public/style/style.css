@@ -1,0 +1,81 @@
+main{
+    margin-bottom: 78px;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #000706;
+    background-color: #f9f5e9;
+    text-align: center; 
+}
+
+h1 { font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;}
+h2 { font-family: Helvetica, Arial, SunSans-Regular, sans-serif;
+}
+
+.foto_uclm{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+.titulo{
+    width: 60%;
+    float: left;
+    text-align: center;
+    color:#58728A;
+    font-weight: bold;
+    font-size: 3.5em;
+    font-family:  sans-serif, Helvetica, Geneva, Arial, SunSans-Regular;
+}
+
+hr.estilo2{
+    width: 100%;
+    position: relative;
+    top: 0.2em;
+    border: 0;
+    height: 0.3em;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+button{
+    background-color: rgb(146, 33, 38);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+  }
+
+td{
+    background-color: white;
+    border: 1px solid black;
+}
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+}  
+
+a:visited { color: purple }
+
+address { margin-top: 1em;
+padding-top: 1em;
+border-top: thin dotted }
+
+footer{
+    background-color: rgb(248, 191, 162);
+    color: #619885;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    left: 0em;
+    text-align: center;
+}
