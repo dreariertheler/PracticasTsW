@@ -3,8 +3,4 @@ class AgregarTareaView extends View {
     super(model, parentId);
   }
 
-  refresh() {
-    document.getElementById(this.parentId).value = this.model.valor;
-    super.refresh();
-  }
 }

@@ -3,19 +3,18 @@ class ListarTareaPageView extends PageView {
       super(model);
       this.content = `
       <h2>Listado de tareas</h2>
-            <table>
+            <table id="lista_tareas">
                 <caption> <b>Tarea </b></caption>
                 <tbody id='tareas'>
                 </tbody>
             </table>
             <br>
-            <button><a href="/tareasApp/agregar" onclick="router.route()">Agregar</a></button>
+            <button onclick="router.route('\/tareasApp\/agregar')">Agregar</button>
             <br><br><br><br><br><br>`;
-          //  this.incrementarContadorView = new ContadorView(model, "contador");
+            this.listarTareaView = new ListarTareaView(model, "lista_tareas");
     }
     refresh(){
       super.refresh();
-      listarTareaPageController.listarTareaController.listar();
-      //this.listarTareaView.refresh();
+      this.listarTareaView.listar();
     }
   }
